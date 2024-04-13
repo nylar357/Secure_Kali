@@ -39,7 +39,7 @@ Project maintainers assume no liability and are not responsible for any misuse o
 
 8. With Fail2ban, you can reduce the risk of security breaches by being proactive in securing your Linux servers or PCs.
 
-[!preview](Screenshots/Screenshot from 2024-04-13 03-14-57.png) 
+![preview](Screenshots/Screenshot from 2024-04-13 03-14-57.png) 
 ## Patching Kali Linux
 Keeping your system up to date can help you ensure that you receive the latest security updates in your Kali install. On very rare occasions you may install an update that breaks a tool that you need, so be sure to test what you plan on using ahead of time. 
 
