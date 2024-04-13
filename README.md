@@ -207,10 +207,10 @@ If you wish for PortSentry to start taking action against detected scans, go to 
 
 ```console
 # To view IPs that have been blocked
-tristram@kali:~$ route | grep '!H'
+user@kali:~$ route | grep '!H'
 
 # To unblock IPs
-tristram@kali:~$ sudo ip route del 1.2.3.4
+user@kali:~$ sudo ip route del 1.2.3.4
 ```
 
 ![Alt text](https://github.com/gh0x0st/Secure_Kali/blob/master/Screenshots/portsentry_block.png?raw=true "portsentry_block")
@@ -238,7 +238,7 @@ user@kali:~$ sudo touch /var/lib/portsentry/portsentry.history
 **To view IPs that have been blocked**
 ```console
 user@kali:~$ sudo fail2ban-client status portsentry
-tristram@kali:~$ sudo iptables -L f2b-portsentry
+user@kali:~$ sudo iptables -L f2b-portsentry
 ```
 
 **To unblock ip from fail2ban**
