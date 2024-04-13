@@ -39,7 +39,7 @@ Project maintainers assume no liability and are not responsible for any misuse o
 
 8. With Fail2ban, you can reduce the risk of security breaches by being proactive in securing your Linux servers or PCs.
 
-## Using Secure / Unsecure bash scripts to start & stop services
+## Using Secure / Non-Secure bash scripts to start & stop services
 ![Alt text](https://github.com/nylar357/Secure_Kali/blob/master/Screenshots/Screenshot%20from%202024-04-13%2003-14-57.png?raw=true "f2b status")
 
 
