@@ -23,21 +23,21 @@ Project maintainers assume no liability and are not responsible for any misuse o
 
 ## Situations Where Fail2ban Can Be Beneficial
 
-**1. Protection against SSH Brute-Force Attacks: Fail2ban is effective in mitigating SSH brute-force attacks targeting protocols like SSH, FTP, or any other service that generates logs. It detects repeated failed login attempts from specific IP addresses and dynamically blocks those addresses, preventing further unauthorized login attempts.
+# 1. Protection against SSH Brute-Force Attacks: Fail2ban is effective in mitigating SSH brute-force attacks targeting protocols like SSH, FTP, or any other service that generates logs. It detects repeated failed login attempts from specific IP addresses and dynamically blocks those addresses, preventing further unauthorized login attempts.
 
-2. Mitigating Password Guessing: Fail2ban helps in countering password guessing attacks where automated tools systematically try different username and password combinations to gain access. By recognizing and blocking IP addresses associated with such activity, Fail2ban reduces the chances of successful unauthorized access.
+# 2. Mitigating Password Guessing: Fail2ban helps in countering password guessing attacks where automated tools systematically try different username and password combinations to gain access. By recognizing and blocking IP addresses associated with such activity, Fail2ban reduces the chances of successful unauthorized access.
 
-3. Enhanced Server Security: By continuously monitoring logs and enforcing dynamic firewall rules, Fail2ban enhances server security and protects against various types of malicious activities. It provides an additional layer of defense, complementing other security measures implemented on the server.
+# 3. Enhanced Server Security: By continuously monitoring logs and enforcing dynamic firewall rules, Fail2ban enhances server security and protects against various types of malicious activities. It provides an additional layer of defense, complementing other security measures implemented on the server.
 
-4. Prevention of Account Lockouts: Fail2ban can prevent legitimate user accounts from being locked out due to mistyped passwords or accidental login failures. It imposes temporary bans, allowing users to retry after a specific duration without permanently blocking them.
+# 4. Prevention of Account Lockouts: Fail2ban can prevent legitimate user accounts from being locked out due to mistyped passwords or accidental login failures. It imposes temporary bans, allowing users to retry after a specific duration without permanently blocking them.
 
-5. Automated Response to Security Threats: Fail2ban automates the process of detecting and responding to security threats. It scans logs, identifies suspicious patterns, and takes action by dynamically updating firewall rules. This automation saves time and reduces the workload on administrators.
+# 5. Automated Response to Security Threats: Fail2ban automates the process of detecting and responding to security threats. It scans logs, identifies suspicious patterns, and takes action by dynamically updating firewall rules. This automation saves time and reduces the workload on administrators.
 
-6. Monitoring and Auditing: Fail2ban generates logs and reports on detected security events, providing valuable information for monitoring and auditing purposes. Administrators can review the logs to gain insights into potential security risks and take necessary corrective actions.
+# 6. Monitoring and Auditing: Fail2ban generates logs and reports on detected security events, providing valuable information for monitoring and auditing purposes. Administrators can review the logs to gain insights into potential security risks and take necessary corrective actions.
 
-7. Customizable Security Policies: Fail2ban allows administrators to define custom rules and filters based on specific security policies and requirements. This flexibility enables organizations to tailor the protection to their unique environment and address specific threats they may face.
+# 7. Customizable Security Policies: Fail2ban allows administrators to define custom rules and filters based on specific security policies and requirements. This flexibility enables organizations to tailor the protection to their unique environment and address specific threats they may face.
 
-8. With Fail2ban, you can reduce the risk of security breaches by being proactive in securing your Linux servers or PCs.** 
+# 8. With Fail2ban, you can reduce the risk of security breaches by being proactive in securing your Linux servers or PCs.
 
 ## Patching Kali Linux
 Keeping your system up to date can help you ensure that you receive the latest security updates in your Kali install. On very rare occasions you may install an update that breaks a tool that you need, so be sure to test what you plan on using ahead of time. 
