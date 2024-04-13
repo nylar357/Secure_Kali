@@ -1,4 +1,4 @@
-SSH Hardening : Preparing A Lab Machine. . . Safely
+****SSH Hardening : Preparing A Lab Machine. . . Safely****
 
  
 
@@ -10,7 +10,7 @@ To avoid writing a 1000 word instructional manual here, I'm going to keep this a
 
 Objectives to harden a Kali Linux machine from being compromised from common exposures that you may be introducing yourself.
 
-Patching Kali Linux
+**Patching Kali Linux**
 Monitoring SSH & Apache Web & Others using Fail2ban
 Restrict access to your listeners -- with custom configurations
 Monitoring and restricting SSH
@@ -21,7 +21,7 @@ This repository and the data provided has been created purely for the purposes o
 
 Project maintainers assume no liability and are not responsible for any misuse or damage caused by the data therein.
 
-Situations Where Fail2ban Can Be Beneficial
+****Situations Where Fail2ban Can Be Beneficial****
 
 Protection against SSH Brute-Force Attacks: Fail2ban is effective in mitigating SSH brute-force attacks targeting protocols like SSH, FTP, or any other service that generates logs. It detects repeated failed login attempts from specific IP addresses and dynamically blocks those addresses, preventing further unauthorized login attempts.
 
