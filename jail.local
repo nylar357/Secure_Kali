@@ -1,3 +1,4 @@
+# Jail -> /etc/fail2ban cp jail.conf jail.local
 # Block attempts to brute force http logins
 [apache-auth] 
 enabled = true 
