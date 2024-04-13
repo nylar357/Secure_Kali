@@ -49,7 +49,7 @@ Project maintainers assume no liability and are not responsible for any misuse o
 Keeping your system up to date can help you ensure that you receive the latest security updates in your Kali install. On very rare occasions you may install an update that breaks a tool that you need, so be sure to test what you plan on using ahead of time. 
 
 ```console
-tristram@kali:~$ sudo apt update && apt full-upgrade -y
+user@kali:~$ sudo apt update && apt full-upgrade -y
 ```
 
 ## Monitoring Apache Web using Fail2ban
@@ -64,8 +64,8 @@ We can keep our system safe by keeping at least these two points in mind:
 This is simple, if you need it, use it. When you're done, turn it off. A very common hardening technique is disabling services that aren't in use and we should not forget this even within Kali. If you don't need your web server running, take it down. This will help lower your attack surface.
 
 ```console
-tristram@kali:~$ sudo service apache2 start
-tristram@kali:~$ sudo service apache2 stop
+user@kali:~$ sudo service apache2 start
+user@kali:~$ sudo service apache2 stop
 ```
 
 ### Utilize Fail2ban to protect Apache while it's running
@@ -77,14 +77,14 @@ A common phrase you'll hear in the realm of Fail2ban is 'jails'. Think of jails 
 This package doesn't come with Kali out of the box, so we just need to install it using apt. After it's on your system, keep in mind that the service itself isn't set to automatically run on boot up. This is important in the event you ever reboot your system without having to remember to manually kick off the service.
 
 ```console
-tristram@kali:~$ sudo apt update && sudo apt install fail2ban
-tristram@kali:~$ sudo systemctl enable fail2ban.service
+user@kali:~$ sudo apt update && sudo apt install fail2ban
+user@kali:~$ sudo systemctl enable fail2ban.service
 ```
 
 #### Create your configuration file
 This utility comes with a jail.conf file, but you should not be modifying this file; create a jail.local file instead.
 ```console
-tristram@kali:~$ sudo touch /etc/fail2ban/jail.local
+user@kali:~$ sudo touch /etc/fail2ban/jail.local
 ```
 
 #### Create your filters
@@ -133,11 +133,11 @@ ignoreregex =
 
 **To view IPs that have been blocked**
 ```console
-tristram@kali:~$ sudo fail2ban-client status JAILNAME
+user@kali:~$ sudo fail2ban-client status JAILNAME
 ```
 **To unblock ip from fail2ban**
 ```console
-tristram@kali:~$ sudo fail2ban-client set JAILNAME unbanip 1.2.3.4
+user@kali:~$ sudo fail2ban-client set JAILNAME unbanip 1.2.3.4
 ```
 
 ## Restrict access to your listeners
@@ -146,8 +146,8 @@ I've ran into cases where I had a listener setup on my machine and ended up catc
 Keep in mind you don't have to limit this to just `reverse shells`,  you can also use this limit access to `apache` or even python's `SimpleHTTPServer`.
 
 ```console
-tristram@kali:~$ sudo iptables -A INPUT -p tcp --destination-port 1234 \! -d 10.10.10.10 -j DROP
-tristram@kali:~$ nc -nvlp 1234
+user@kali:~$ sudo iptables -A INPUT -p tcp --destination-port 1234 \! -d 10.10.10.10 -j DROP
+user@kali:~$ nc -nvlp 1234
 ```
 
 ## Monitoring and Restricting SSH
@@ -183,7 +183,7 @@ The final piece I wanted to talk about is port scanning. The idea of this contro
 This package doesn't come with Kali out of the box, so we just need to install it using apt. After it's on your system, keep in mind that the service itself isn't set to automatically run on boot up. This is important in the event you ever reboot your system without having to remember to manually kick off the service. <CHECK THIS ON REBOOT>
 
 ```console
-tristram@kali:~$ sudo apt update && sudo apt install portsentry
+user@kali:~$ sudo apt update && sudo apt install portsentry
 ```
 
 #### Configuration Files
@@ -232,18 +232,18 @@ Our filter for the PortSentry jail is pretty straight forward. One thing to keep
 
 **Create history file**
 ```console
-tristram@kali:~$ sudo touch /var/lib/portsentry/portsentry.history
+user@kali:~$ sudo touch /var/lib/portsentry/portsentry.history
 ```
 
 **To view IPs that have been blocked**
 ```console
-tristram@kali:~$ sudo fail2ban-client status portsentry
+user@kali:~$ sudo fail2ban-client status portsentry
 tristram@kali:~$ sudo iptables -L f2b-portsentry
 ```
 
 **To unblock ip from fail2ban**
 ```console
-tristram@kali:~$ sudo fail2ban-client set portsentry unbanip 1.2.3.4
+user@kali:~$ sudo fail2ban-client set portsentry unbanip 1.2.3.4
 ```
 
 **To unblock ip from PortSentry**
