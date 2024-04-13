@@ -23,7 +23,7 @@ Project maintainers assume no liability and are not responsible for any misuse o
 
 ## Situations Where Fail2ban Can Be Beneficial
 
-..1. Protection against SSH Brute-Force Attacks: Fail2ban is effective in mitigating SSH brute-force attacks targeting protocols like SSH, FTP, or any other service that generates logs. It detects repeated failed login attempts from specific IP addresses and dynamically blocks those addresses, preventing further unauthorized login attempts.
+..* Protection against SSH Brute-Force Attacks: Fail2ban is effective in mitigating SSH brute-force attacks targeting protocols like SSH, FTP, or any other service that generates logs. It detects repeated failed login attempts from specific IP addresses and dynamically blocks those addresses, preventing further unauthorized login attempts.
 
 ..2. Mitigating Password Guessing: Fail2ban helps in countering password guessing attacks where automated tools systematically try different username and password combinations to gain access. By recognizing and blocking IP addresses associated with such activity, Fail2ban reduces the chances of successful unauthorized access.
 
