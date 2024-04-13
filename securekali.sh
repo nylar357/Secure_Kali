@@ -3,7 +3,6 @@
 header()
 {
     echo -e "\n    >> Secure Kali Linux"
-    echo -e "    >> https://www.github.com/gh0x0st \n"
 }
 
 check_root()
