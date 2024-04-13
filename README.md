@@ -1,6 +1,6 @@
 ## SSH Hardening : Preparing A Lab Machine. . . Safely
 
- 
+ ### This repository and the data provided has been created purely for the purposes of academic research and for the development of effective security techniques and is not intended to be used to attack systems except where explicitly authorized. It is your responsibility to obey all applicable local, state and federal laws. ###
 
 So this week we all got to see some of the ways we can use SSH to move files ( scp ) & remotely login and use machines with it.  Doing TDX Challenges (very little worry here) but similar services like hackthebox.comLinks to an external site. or tryhackme.comLinks to an external site. there will be times you'll be using SSH.  While the admins of these labs do a great job of preventing students from attacking each other,  the machines you're targeting can. Not to mention you never know if the people who are sharing the same space as you are ethical or not and whether they found a way around controls.  Regardless this is a great exercise in hardening SSH, which you should ALWAYS be taking steps to do.
 
@@ -17,7 +17,7 @@ Monitoring and restricting SSH
 Monitoring and restricting port scans using PortSentry
 ## Disclaimer
 
-This repository and the data provided has been created purely for the purposes of academic research and for the development of effective security techniques and is not intended to be used to attack systems except where explicitly authorized. It is your responsibility to obey all applicable local, state and federal laws. 
+
 
 Project maintainers assume no liability and are not responsible for any misuse or damage caused by the data therein.
 
