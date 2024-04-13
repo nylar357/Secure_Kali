@@ -1,10 +1,20 @@
-# Securing your Kali Linux machine
-Online labs are a great place for you to hone in on your skills. Although, while you're practicing in these platforms your primary focus is probably going to be focused on your own offensive activities and may not have too much attention on the defense of your own machine while in a VPN-based setting.
+SSH Hardening : Preparing A Lab Machine. . . Safely
 
-While the admins of these labs will do their own due diligence in making sure that students can't attack each other, one thing to keep in mind that while you likely cannot talk to a student machine directly from your own computer, the machines you're targeting can. Not to mention you never know if the people who are sharing the same space as you are ethical or not and whether they found a way around controls.
+ 
+
+So this week we all got to see some of the ways we can use SSH to move files ( scp ) & remotely login and use machines with it.  Doing TDX Challenges (very little worry here) but similar services like hackthebox.comLinks to an external site. or tryhackme.comLinks to an external site. there will be times you'll be using SSH.  While the admins of these labs do a great job of preventing students from attacking each other,  the machines you're targeting can. Not to mention you never know if the people who are sharing the same space as you are ethical or not and whether they found a way around controls.  Regardless this is a great exercise in hardening SSH, which you should ALWAYS be taking steps to do.
 
 Before you jump into these labs, you should add a few levels of protection on your Kali Linux machine. With some being around awareness and some are technical. Essentially, you're creating a security policy for yourself.
 
+To avoid writing a 1000 word instructional manual here, I'm going to keep this as focused as possible leaving the majority to pictures, and if your planning on doing this the link @ the end.
+
+Objectives to harden a Kali Linux machine from being compromised from common exposures that you may be introducing yourself.
+
+Patching Kali Linux
+Monitoring SSH & Apache Web & Others using Fail2ban
+Restrict access to your listeners -- with custom configurations
+Monitoring and restricting SSH
+Monitoring and restricting port scans using PortSentry
 ## Disclaimer
 
 This repository and the data provided has been created purely for the purposes of academic research and for the development of effective security techniques and is not intended to be used to attack systems except where explicitly authorized. It is your responsibility to obey all applicable local, state and federal laws. 
